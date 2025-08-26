@@ -1,0 +1,23 @@
+/* IMPORT FONTS */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* GLOBAL STYLES */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+}
+
+.--dark-theme {
+  --color-bg: #282828;
+  --color-text: #ffffff;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-text);
+}

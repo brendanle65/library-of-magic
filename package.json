@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "library-of-magic",
+  "repository": "https://github.com/brendanle65/library-of-magic.git",
+  "author": "Brendan Le <80903766+brendanle65@users.noreply.github.com>",
+  "@comments": {
+    "dev": "serve index.html on localhost"
+  },
+  "scripts": {
+    "dev": "live-server --open=/src/pages"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
