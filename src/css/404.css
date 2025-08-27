@@ -1,0 +1,26 @@
+/* style 404 */
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+}
+
+.jack-404 {
+  margin-top: 25px;
+  width: 120px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.2));
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transform: rotate(5deg);
+  margin-left: 15px;
+}
+
+.history__button {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.history__button:hover {
+  color: var(--color-text-secondary);
+}
