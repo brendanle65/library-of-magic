@@ -29,6 +29,10 @@ a {
   color: var(--color-text);
 }
 
+main {
+  margin: 64px 0;
+}
+
 @media screen and (min-width: 720px) {
   body {
     padding: 32px 128px;
@@ -93,6 +97,10 @@ a {
   place-items: center;
 }
 
+.theme:hover {
+  background: #c00c0c;
+}
+
 .theme__logo {
   width: 60%;
   height: 60%;
@@ -118,5 +126,26 @@ a {
   .theme {
     right: 128px;
     bottom: 32px;
+  }
+}
+
+/* style CURSOR */
+.cursor {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .cursor {
+    width: 12px;
+    height: 12px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #e1100f;
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.8;
+    display: block;
   }
 }
