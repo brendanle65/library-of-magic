@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/global.css" />
+    <link rel="stylesheet" href="../../../css/chapter.css" />
+    <link rel="icon" type="image/x-icon" href="../../../../static/favicon.ico" />
+    <title>Don't Tell Me I'm Wrong</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__link" href="/">
+        <div class="header__square"></div>
+        <span>Library of Magic</span>
+      </a>
+
+      <a class="header__link" href="/about">
+        <span>About</span>
+        <div class="header__circle"></div>
+      </a>
+    </header>
+
+    <main class="container">
+      <div class="origin">
+        <span>Trick two from </span>
+        <a class="origin__link" href="/">Easy Magic Hits Hard</a>
+      </div>
+      <h1 class="title">Don't Tell Me I'm Wrong</h1>
+      <div class="blurb">
+        Maecenas et justo neque. Etiam id pretium ante. Integer venenatis suscipit orci vitae semper. Praesent et
+        porttitor massa.
+      </div>
+      <ol class="categories">
+        <li class="categories__tag">
+          mentalism
+          <div class="tag__bullet"></div>
+        </li>
+        <li class="categories__tag">
+          transformation
+          <div class="tag__bullet"></div>
+        </li>
+      </ol>
+
+      <div class="navigation" id="navigation">
+        <button class="navigation__button navigation__button--selected" id="spectator-button" data-view="spectator">
+          Spectator's View
+        </button>
+        <button class="navigation__button" id="magician-button" data-view="magician">Magician's View</button>
+        <button class="navigation__button" id="notes-button" data-view="notes">History and Notes</button>
+      </div>
+
+      <!-- NOTES -->
+      <div class="notes" id="notes">
+        <p>
+          Proin eget vehicula massa, et imperdiet est. Pellentesque vitae lorem in tellus efficitur placerat eget sed
+          turpis. Phasellus imperdiet metus sit amet egestas laoreet. Integer nulla ipsum, ultrices vitae urna in,
+          tincidunt lacinia arcu. Integer nulla massa, tempus quis ligula ultrices, lobortis pretium nisi. Ut mollis
+          urna a interdum mattis. Pellentesque elementum orci aliquam gravida faucibus. Duis at quam vulputate,
+          malesuada neque ac, pharetra ipsum. Aliquam accumsan tortor et tincidunt vehicula.
+        </p>
+
+        <p>
+          Proin eget vehicula massa, et imperdiet est. Pellentesque vitae lorem in tellus efficitur placerat eget sed
+          turpis. Phasellus imperdiet metus sit amet egestas laoreet. Integer nulla ipsum, ultrices vitae urna in,
+          tincidunt lacinia arcu. Integer nulla massa, tempus quis ligula ultrices, lobortis pretium nisi. Ut mollis
+          urna a interdum mattis. Pellentesque elementum orci aliquam gravida faucibus. Duis at quam vulputate,
+          malesuada neque ac, pharetra ipsum. Aliquam accumsan tortor et tincidunt vehicula.
+        </p>
+      </div>
+
+      <!-- SCRIPT -->
+      <div class="script" id="script">
+        <div class="key">
+          Key = M: magician – <span class="key__spectator">S: spectator</span> –
+          <span class="key__action">A: action</span>
+        </div>
+
+        <div class="script__inner">
+          <div class="line">
+            <div class="line__letter">M:</div>
+            <div>Celeste, go ahead and name any two cards.</div>
+          </div>
+
+          <div class="line line--spectator">
+            <div class="line__letter">S:</div>
+            <div>Four of Hearts and Queen of Spades.</div>
+          </div>
+
+          <div class="line">
+            <div class="line__letter">M:</div>
+            <div>
+              I’m going to take one of those out and leave the other one in. Which one would you like me to
+              <i>take</i> out?
+            </div>
+          </div>
+
+          <div class="line line--spectator">
+            <div class="line__letter">S:</div>
+            <div>Queen of Spades.</div>
+          </div>
+
+          <div class="line line--action">
+            <div class="line__letter">A:</div>
+            <div>
+              <div>Magician goes into the pack and takes out the Queen of Spades.</div>
+              <div class="tutorial">
+                (While locating and <a href="/" class="tutorial__link">culling</a> the Four of Hearts to the top.)
+              </div>
+            </div>
+          </div>
+
+          <div class="line">
+            <div class="line__letter">M:</div>
+            <div>Hold on to this.</div>
+          </div>
+
+          <div class="line line--action">
+            <div class="line__letter">A:</div>
+            <div>Celeste takes card.</div>
+          </div>
+
+          <div class="line">
+            <div class="line__letter">M:</div>
+            <div>Celeste, go ahead and name any two cards.</div>
+          </div>
+
+          <div class="line">
+            <div class="line__letter">M:</div>
+            <div>Celeste, go ahead and name any two cards.</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <button class="theme" id="theme-toggle-button">
+      <img
+        class="theme__logo theme__logo--light"
+        src="../../../../static/images/light-mode-icon.svg"
+        alt="theme-light"
+      />
+      <img class="theme__logo theme__logo--dark" src="../../../../static/images/dark-mode-icon.svg" alt="theme-dark" />
+    </button>
+
+    <footer class="footer">© 2025 Library of Magic</footer>
+
+    <div class="cursor" id="cursor"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script type="module" src="../../../js/global.js"></script>
+    <script type="module" src="../../../js/chapter.js"></script>
+  </body>
+</html>
