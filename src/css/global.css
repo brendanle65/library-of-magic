@@ -5,11 +5,13 @@
 :root {
   --color-bg: #ffffff;
   --color-text: #000000;
+  --color-text-secondary: #555555;
 }
 
 .--dark-theme {
   --color-bg: #282828;
   --color-text: #ffffff;
+  --color-text-secondary: #999999;
 }
 
 body {
@@ -31,6 +33,13 @@ a {
 
 main {
   margin: 64px 0;
+}
+
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @media screen and (min-width: 720px) {
