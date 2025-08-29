@@ -12,7 +12,7 @@ navigation.addEventListener("click", handleClick);
 function handleClick(event) {
   const name = event.target.dataset.view;
   if (event.target.nodeName === "BUTTON") {
-    window.location = `#${name}`;
+    window.location.replace(`#${name}`);
     toggleView(name);
   }
 }
@@ -29,7 +29,7 @@ function toggleView(view = "spectator") {
       notes.style.display = "none";
       script.style.display = "block";
       for (let index = 0; index < tutorialLines.length; index++) {
-        tutorialLines[index].style.display = "block";
+        tutorialLines[index].style.display = "inline";
       }
       break;
     case "notes":
